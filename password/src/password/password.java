@@ -27,6 +27,7 @@ public class password {
 				
 				break;
 				
+				
 			}else {
 				System.out.println("try again");
 				guess = input.nextLine();

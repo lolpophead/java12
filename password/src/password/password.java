@@ -14,6 +14,7 @@ public class password {
 		counter = 0;
 		
 			
+		
 		String guess;
 		
 		

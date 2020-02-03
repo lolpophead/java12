@@ -11,30 +11,28 @@ public class mongram {
 		String firstLow;
 		String middleLow;
 		String lastUpper;
-		String firstLowShort;
-		String middleLowShort;
-		String lastUpperShort;
-		
+		//creates strings for the users inputs as well as for variables to be used in operators
 		
 		System.out.println("pls enter first name");
 		first = input.nextLine();
+		//prompts the user to input their first name and assigns it to a variable
 		
 		System.out.println("pls enter middle name");
 		middle = input.nextLine();
+		//prompts the user to input their middle name and assigns it to a variable
 		
 		System.out.println("pls enter last name");
 		last = input.nextLine();
-		
+		//prompts the user to input their last name and assigns it to a variable
 		
 		firstLow=first.toLowerCase();
 		middleLow=middle.toLowerCase();
 		lastUpper=last.toUpperCase();
+		//takes the users inputed first last and middle name and converts them to the appropriate case
 		
-		firstLowShort=firstLow.substring(0, 1);
-		middleLowShort=middleLow.substring(0, 1);
-		lastUpperShort=lastUpper.substring(0, 1);
+		System.out.print(firstLow.substring(0, 1) + lastUpper.substring(0, 1) + middleLow.substring(0, 1) );
+		//prints out the fist letter cased strings in  specified order 
 		
-		System.out.print(firstLowShort + lastUpperShort + middleLowShort);
 	}
 
 }

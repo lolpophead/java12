@@ -17,6 +17,7 @@ public class PrimeNumberFinder {
 			System.out.println("not prime");
 			//if the number is less than or equal to one the number is not prime
 			
+			
 		}else {
 		//if the number is greater than 1 it is checked
 			

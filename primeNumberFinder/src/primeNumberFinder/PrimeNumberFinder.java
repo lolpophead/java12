@@ -12,7 +12,7 @@ public class PrimeNumberFinder {
 		
 		System.out.println("pls enter a number");
 		prime = input.nextInt();
-		//prompts the user to enter a number that might be prime
+		//prompts the user to enter a number that might be prime and assigns its value to the variable
 		if (prime<=1) {
 			System.out.println("not prime");
 			//if the number is less than or equal to one the number is not prime

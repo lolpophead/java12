@@ -31,12 +31,14 @@ public class Nim {
 		int playerStones;
 		playerStones = input.nextInt();
 		return playerStones;
-		
+		//prompts the user to pick a certain number of stones then returns that value
 	
 }
 	public static int computerDraw() {
 		int computertake; 
 		computertake = (int) ((Math.random() * (3) + 1));
 		return computertake;
+		//makes a random selection between 1 and 3 stones and returns it as the computers value
+		//as the number of total stones cannot be accessed by this method it is possible that the computer may draw more than the available number of stones
 }
 }

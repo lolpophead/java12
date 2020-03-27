@@ -9,30 +9,32 @@ public class War {
 		
 		int player = drawCard();
 		int computer = drawCard();
-
+//sets the player and computers card draw number using the random card drawing method
 
 				
 		System.out.println("you drew a " + cardName(player));
 		System.out.println("the computer drew a " + cardName(computer));
-
+//tells the user what card they drew and what card the computer drew converting it using the card name method
 
 		if (winner(player, computer)) {
 			System.out.println("you won");
-
+//uses the winner method to determine if the player beat the computer
 		}else {
 			if(tie(player, computer)) {
 				System.out.println("you tied");
+				//if the player didn't win checks for a tie using the tie method
 			}else {
 				System.out.println("you lost");
+				// if the player didn't win and their wasn't a tie the player must have lost
 			}
 		}
 		
-		
+//runs the game once
 while (playAgain()) {
-
+//then prompts the player using the play again method, if true it runs the game again
 	player = drawCard();
 	computer = drawCard();
-		
+//Generates new card values every time the game is played.
 System.out.println("you drew a " + cardName(player));
 System.out.println("the computer drew a " + cardName(computer));
 

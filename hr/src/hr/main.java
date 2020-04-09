@@ -7,10 +7,11 @@ static Scanner input = new Scanner(System.in);
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		int action = 0;
+		//creates the varible action which will be used to select different menu choices
 		System.out.println("enter ur name");
 		String Name = input.next();
 		bob = new Employee(Name);
-		
+		//asks the user to input a name and sets it to the new employee
 		while (action!=6) {
 			System.out.println("1 New Employee");
 			System.out.println("2 Employee Info");
@@ -19,8 +20,10 @@ static Scanner input = new Scanner(System.in);
 			System.out.println("5 Weekly Pay");
 			System.out.println("6 Exit");
 			System.out.println("Pls enter ur selection 1-6");
+			//starts a loop and provides menu options
 			
 			action = input.nextInt();
+			//sets the users input value to the action
 				
 				if (action==1) {
 					create();
@@ -40,7 +43,7 @@ static Scanner input = new Scanner(System.in);
 				}else if (action==6) {
 					System.out.println("Bye");
 					break;
-					
+					//depending on the users choice different methods will be executed 
 				}
 				
 		}
@@ -59,13 +62,13 @@ static Scanner input = new Scanner(System.in);
 		System.out.println("Enter SIN");
 		int SIN = input.nextInt();
 		bob.setSIN(SIN);
-		
+		//allows for the initial input of user information
 
 	}
 	public static void read() {
 		System.out.println("All employee info:");
 		bob.printAll();
-		
+		//prints out all info by referencing the printAll method
 	}
 	public static void edit() {
 		System.out.println("Enter new ID");
@@ -81,16 +84,16 @@ static Scanner input = new Scanner(System.in);
 		int SIN = input.nextInt();
 		bob.setSIN(SIN);
 		System.out.println("Edit complete");
-		
+		//allows the user to edit all user info except for the name
 	}
 	public static void raise() {
 		System.out.println("Raise value");
 		double value = input.nextDouble();
 		bob.giveRaise(value);
-		
+		//Executes the giveRaiser method
 	}
 	public static void calc() {
 		System.out.println("Weekly pay = " + bob.weeklyPay());
-	}
+	}//executes weeklypay method
 	
 }
